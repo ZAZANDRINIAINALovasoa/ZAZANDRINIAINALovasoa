@@ -1,41 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Lovasoa - Juriste</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovasoa ZAZANDRINIAINA - Juriste</title>
     <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin-top: 50px;
-            background: #f0f4f8;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid #1e3c72;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        body {
+            background: #f4f7fc;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .cv {
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e3c72;
+            font-size: 32px;
+            margin-bottom: 5px;
         }
         h2 {
+            color: #2a5298;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 10px;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 22px;
             color: #1e3c72;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .formation-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid #1e3c72;
+        }
+        .date {
+            color: #1e3c72;
+            font-weight: 600;
+        }
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .skill {
+            background: #e0e7ff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
         }
         .dispo {
             background: #1e3c72;
             color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            display: inline-block;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h2>ZAZANDRINIAINA Lovasoa</h2>
-    <img src="_MG_7419~2.jpg" alt="Photo Lovasoa">
-    <h3>Juriste en Formation / M1 Droit</h3>
-    <p>📧 louvalouva@gmail.com</p>
-    <p>📞 +26 34 78 482 11</p>
-    <div class="dispo">✅ Disponible pour collaboration</div>
+    <div class="cv">
+        <h1>ZAZANDRINIAINA Lovasoa</h1>
+        <h2>Juriste en formation • Master 1 Droit</h2>
+        
+        <div class="info">
+            <p><strong>📅 Naissance:</strong> 10 juillet 2002</p>
+            <p><strong>🎓 Diplôme:</strong> Master 1</p>
+            <p><strong>⏳ Expérience:</strong> 3 ans</p>
+            <p><strong>📞 Téléphone:</strong> +26 34 78 482 11</p>
+            <p><strong>📧 Email:</strong> louvalouva@gmail.com</p>
+            <p><strong>📍 Adresse:</strong> IB 447/3611 Ambodirotra, Fianarantsoa</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📚 Formation</div>
+            <div class="formation-item">
+                <div class="date">2020 - 2021</div>
+                <strong>Baccalauréat série A2</strong> – Lycée privé CPE
+            </div>
+            <div class="formation-item">
+                <div class="date">2022 - 2023</div>
+                <strong>DTS en Droit</strong> – Institut de Formation Technique Fianarantsoa
+            </div>
+            <div class="formation-item">
+                <div class="date">2023 - 2024</div>
+                <strong>Licence en Droit</strong> – Institut de Formation Technique Fianarantsoa
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💪 Compétences</div>
+            <div class="competences">
+                <div>
+                    <strong>💻 Informatique</strong><br>
+                    <span class="skill">Word</span>
+                    <span class="skill">Excel</span>
+                    <span class="skill">PowerPoint</span>
+                </div>
+                <div>
+                    <strong>🌍 Langues</strong><br>
+                    Malagasy (maternelle)<br>
+                    Français (courant)<br>
+                    Anglais (intermédiaire)
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 Profil professionnel</div>
+            <p>✔ Recherches juridiques (50%)</p>
+            <p>✔ Prise de parole (70%)</p>
+            <p>✔ Capacité d'analyse (45%)</p>
+            <p>✔ Organisation et rigueur (75%)</p>
+            <p>✔ Esprit critique (50%)</p>
+            <p>✔ Communication (85%)</p>
+        </div>
+
+        <div class="dispo">
+            ✅ DISPONIBLE POUR COLLABORATION – Juriste freelance
+        </div>
+    </div>
 </body>
 </html>
